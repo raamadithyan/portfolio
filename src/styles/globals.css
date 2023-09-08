@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body,html {
+	width: 100vw;
+	height:100vh;
+}
+
+.header-items {
+	display: flex;
+	gap: 48px;
+	padding:16px 0;
+}
+
+.logo {
+/*	background-color: pink;*/
+display: flex;	
+	padding:16px 0;
+}
+
+a{
+	color: white;
+}
+
+h4 {
+	position: absolute;
+	top:50%;
+	left:50%;
+	color: white;
+}
+
+.slide-in {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100vh;
+	background: pink;
+	transform-origin: bottom;
+	z-index: 30;
+}
+
+
+
+.slide-out {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100vh;
+	background: pink;
+	transform-origin: top;
+	z-index: 30;
+	
+}
+
+.app {
+  border: 2px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 104px;
+  row-gap: 40px;
+  height: calc(100vh - 20vh);
+  width: 100%;
+  padding: 40px;
+}
+
+/* Card.css */
+.card {
+
+/*transform: translateY(-50%);*/
+	width: 160px;
+  height: 240px;
+  cursor: pointer;
+/*  transform-origin: center;*/
+
+
+
+}
+
+/*.card.full-screen {
+    top: 0;
+position: absolute;
+	
+  width: 100%;
+  height: 100%;
+
+
+}*/
+
+.card.full {
+/*	background-color: yellow;*/
+}
+
+
