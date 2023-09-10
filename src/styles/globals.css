@@ -15,11 +15,7 @@ body,html {
 	padding:16px 0;
 }
 
-.logo {
-/*	background-color: pink;*/
-display: flex;	
-	padding:16px 0;
-}
+
 
 a{
 	color: white;
@@ -57,18 +53,6 @@ h4 {
 	
 }
 
-.app {
-  border: 2px solid yellow;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  column-gap: 104px;
-  row-gap: 40px;
-  height: calc(100vh - 20vh);
-  width: 100%;
-  padding: 40px;
-}
 
 /* Card.css */
 .card {
