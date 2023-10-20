@@ -15,7 +15,7 @@ const variant={
 }
 
   return (
-    <AnimatePresence initial={false}>
+    // <AnimatePresence initial={false}>
         <Link href={{
             pathname: `/portfolio/${path}`,
              // the data
@@ -45,7 +45,7 @@ const variant={
     </motion.div>
         </Link>
 
-    </AnimatePresence>
+    // </AnimatePresence>
   );
 }
 
