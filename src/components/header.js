@@ -28,15 +28,15 @@ const rammetto = Rammetto_One({
  		">
 
  		<div className="header-item text-xl">
- 		<Link href="/portfolio"> Portfolio</Link>
+ 		<Link className="text-[1rem] sm:text-[1.2rem]" href="/portfolio"> Portfolio</Link>
  		</div>
 
  		<div className="header-item text-xl">
- 		<Link href="/resume"> Resume</Link>
+ 		<Link className="text-[1rem] sm:text-[1.2rem]" href="/resume"> Resume</Link>
  		</div>
 
- 		<div className="header-item text-xl">
- 		<Link href="/connect">Connect</Link>
+ 		<div  className="header-item text-xl">
+ 		<Link className="text-[1rem] sm:text-[1.2rem]" href="/connect">Connect</Link>
  		</div>
 
  		</div>
