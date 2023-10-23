@@ -6,11 +6,11 @@ export default function Home() {
     <Page>
     <div 
       className='
-        bg-[#5e44e1] w-full h-[100vh]
-          flex flex-col pt-48 sm:pt-24 items-center sm:justify-center
-
+        bg-[#5e44e1] w-full h-fit sm:h-[100vh]
+          flex flex-col pt-40 sm:pt-24 items-center sm:justify-center
+         
          '>
-         <div className=' w-[80%] sm:w-[50%] h-fit'>
+         <div className='  w-[80%] sm:w-[50%] h-auto'>
       <h1 
       className='
         font-bold
@@ -41,9 +41,9 @@ export default function Home() {
        leave a lasting impression.
        
       </h1>
- <div className="  h-fit  mt-8 ">
+ <div className="  h-fit relative top-0 sm:relative  sm:mt-8 ">
 
-           <Lottie className=' absolute mix-blend-screen scale-100 sm:scale-150 sm:relative' style={{ height: 320 }}  animationData={groovyWalkAnimation} />;
+           <Lottie className=' transform -translate-y-20 sm:-translate-y-10  mix-blend-screen scale-100 sm:scale-150 sm:relative' style={{ height: 320 }}  animationData={groovyWalkAnimation} />;
       
     </div>
          </div>
