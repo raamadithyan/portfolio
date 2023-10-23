@@ -1,15 +1,16 @@
 import Page from '@/components/Page'
-
+import Lottie from "lottie-react";
+import groovyWalkAnimation from "public/block.json";
 export default function Home() {
   return (
     <Page>
     <div 
       className='
         bg-[#5e44e1] w-full h-[100vh]
-         border-yellow-600 border border-1 flex justify-center items-center
+          flex flex-col pt-48 sm:pt-24 items-center sm:justify-center
 
          '>
-         <div className=' border-yellow-600 border border-1 w-[80%] sm:w-[50%] h-[50%]'>
+         <div className=' w-[80%] sm:w-[50%] h-fit'>
       <h1 
       className='
         font-bold
@@ -40,9 +41,13 @@ export default function Home() {
        leave a lasting impression.
        
       </h1>
+ <div className="  h-fit  mt-8 ">
 
-           
+           <Lottie className=' absolute mix-blend-screen scale-100 sm:scale-150 sm:relative' style={{ height: 320 }}  animationData={groovyWalkAnimation} />;
+      
+    </div>
          </div>
+        
     </div>
     </Page>
   )
