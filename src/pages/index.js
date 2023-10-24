@@ -10,7 +10,7 @@ export default function Home() {
           flex flex-col pt-40 sm:pt-24 items-center sm:justify-center
          
          '>
-         <div className='  w-[80%] sm:w-[50%] h-auto'>
+         <div className=' w-[80%] sm:w-[50%] h-auto'>
       <h1 
       className='
         font-bold
@@ -34,18 +34,18 @@ export default function Home() {
         sm:text-xl
         text-center
         '>
-              Hey there! I'm Raam Adithyan, a passionate 
-      frontend developer with a flair for creating 
-      seamless user experiences. I specialize in crafting
-       intuitive, interactive, and modern web apps that 
-       leave a lasting impression.
-       
-      </h1>
+              Feature oriented Front End Developer specializing in JavaScript and React.
+              Passionate about creating dynamic interactive web applications and thrive on turning ideas into code.
+              </h1>
  <div className="  h-fit relative top-0 sm:relative  sm:mt-8 ">
 
            <Lottie className=' transform -translate-y-20 sm:-translate-y-10  mix-blend-screen scale-100 sm:scale-150 sm:relative' style={{ height: 320 }}  animationData={groovyWalkAnimation} />;
       
     </div>
+<div className="flex justify-center -translate-y-48 sm:-translate-y-12 ">
+    <button className='text-white px-4 py-2 border-2 rounded-md scale-75 sm:scale-100'>Currently Open for Work</button>
+         </div>
+
          </div>
         
     </div>
