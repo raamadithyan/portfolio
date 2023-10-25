@@ -2,65 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-body,html {
+body,
+html {
 	width: 100vw;
-	height:100vh;
+	height: 100vh;
 }
 
-
-
-
-
-a{
+a {
 	color: white;
 }
 
 h4 {
 	position: absolute;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 	color: white;
 }
 
 .slide-in {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height:100vh;
+	height: 100vh;
 	background: pink;
 	transform-origin: bottom;
 	z-index: 30;
 }
 
-
-
 .slide-out {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height:100vh;
+	height: 100vh;
 	background: pink;
 	transform-origin: top;
 	z-index: 30;
-	
 }
-
 
 /* Card.css */
 .card {
-
-/*transform: translateY(-50%);*/
+	/*transform: translateY(-50%);*/
 	width: 160px;
-  height: 240px;
-  cursor: pointer;
-/*  transform-origin: center;*/
-
-
-
+	height: 240px;
+	cursor: pointer;
+	/*  transform-origin: center;*/
 }
 
 /*.card.full-screen {
@@ -74,7 +61,19 @@ position: absolute;
 }*/
 
 .card.full {
-/*	background-color: yellow;*/
+	/*	background-color: yellow;*/
 }
 
+th,
+td {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 40px;
+	text-align: left;
+}
 
+td {
+	font-weight: 300;
+	color: lightgray;
+}
