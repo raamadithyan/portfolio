@@ -1,6 +1,11 @@
 import Page from "@/components/Page";
+import { motion } from "framer-motion";
 
 export default function Resume() {
+  const variant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <Page>
       <div
@@ -11,7 +16,16 @@ export default function Resume() {
         <div className="  w-[80%] sm:w-[50%] h-auto flex justify-around">
           {/*Experience*/}
 
-          <div>
+          <motion.div
+            variants={variant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.3,
+              // delay: 0.1 * index,
+            }}
+          >
             <table className="text-white ">
               <thead>
                 <tr>
@@ -52,11 +66,20 @@ export default function Resume() {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </motion.div>
 
           {/*Skills*/}
 
-          <div>
+          <motion.div
+            variants={variant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.6,
+              // delay: 0.1 * index,
+            }}
+          >
             <table className="text-white skill-table ">
               <thead>
                 <tr>
@@ -90,7 +113,7 @@ export default function Resume() {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Page>

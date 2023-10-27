@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
 import Page from "@/components/Page";
+import Link from "next/link";
 
 export default function Connect() {
+  const variant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <Page>
       <div
@@ -11,7 +17,16 @@ export default function Connect() {
         <div className="w-[80%] sm:w-[50%] h-auto flex justify-end">
           {/*Skills*/}
 
-          <div>
+          <motion.div
+            variants={variant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.6,
+              // delay: 0.1 * index,
+            }}
+          >
             <table className="text-white  ">
               <tbody>
                 <tr>
@@ -25,7 +40,9 @@ export default function Connect() {
                   </th>
                 </tr>
                 <tr>
-                  <th className="text-2xl connect-table">Github</th>
+                  <Link href="https://github.com/raamadithyan" legacyBehavior>
+                    <th className="text-2xl connect-table">Github</th>
+                  </Link>
                 </tr>
                 <tr>
                   <th className="text-2xl connect-table">Linkedin</th>
@@ -35,7 +52,7 @@ export default function Connect() {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Page>
