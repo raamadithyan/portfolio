@@ -67,13 +67,27 @@ position: absolute;
 th,
 td {
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 12px;
 	padding-left: 30px;
 	padding-right: 40px;
 	text-align: left;
 }
 
 td {
-	font-weight: 300;
-	color: lightgray;
+	font-weight: 400;
+	color: lightgrey;
+	font-size: 16px;
+}
+
+.connect-table {
+	padding: 2px !important;
+	font-weight: 400;
+}
+
+.connect-table-bottom {
+	padding-bottom: 32px !important;
+}
+
+.skill-table td {
+	padding-bottom: 1px;
 }
