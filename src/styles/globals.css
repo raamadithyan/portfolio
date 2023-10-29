@@ -4,50 +4,50 @@
 
 body,
 html {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
-	color: white;
+  color: white;
 }
 
 h4 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
 }
 
 .slide-in {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	background: pink;
-	transform-origin: bottom;
-	z-index: 30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: pink;
+  transform-origin: bottom;
+  z-index: 30;
 }
 
 .slide-out {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	background: pink;
-	transform-origin: top;
-	z-index: 30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: pink;
+  transform-origin: top;
+  z-index: 30;
 }
 
 /* Card.css */
 .card {
-	/*transform: translateY(-50%);*/
-	width: 160px;
-	height: 240px;
-	cursor: pointer;
-	/*  transform-origin: center;*/
+  /*transform: translateY(-50%);*/
+  width: 160px;
+  height: 240px;
+  cursor: pointer;
+  /*  transform-origin: center;*/
 }
 
 /*.card.full-screen {
@@ -61,33 +61,39 @@ position: absolute;
 }*/
 
 .card.full {
-	/*	background-color: yellow;*/
+  /*	background-color: yellow;*/
 }
 
 th,
 td {
-	padding-top: 10px;
-	padding-bottom: 12px;
-	padding-left: 30px;
-	padding-right: 40px;
-	text-align: left;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 40px;
+  text-align: left;
 }
 
 td {
-	font-weight: 400;
-	color: lightgrey;
-	font-size: 16px;
+  font-weight: 400;
+  color: lightgrey;
+  font-size: 16px;
 }
 
 .connect-table {
-	padding: 2px !important;
-	font-weight: 400;
+  padding: 2px !important;
+  font-weight: 400;
 }
 
 .connect-table-bottom {
-	padding-bottom: 32px !important;
+  padding-bottom: 32px !important;
 }
 
 .skill-table td {
-	padding-bottom: 1px;
+  padding-bottom: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  td {
+    font-size: 12px;
+  }
 }

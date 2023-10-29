@@ -13,7 +13,7 @@ export default function Resume() {
       flex justify-center items-center
     "
       >
-        <div className="  w-[80%] sm:w-[50%] h-auto flex justify-around">
+        <div className=" mt-20 sm:mt-0 w-[80%] sm:w-[50%] h-auto flex justify-around">
           {/*Experience*/}
 
           <motion.div
@@ -29,7 +29,7 @@ export default function Resume() {
             <table className="text-white ">
               <thead>
                 <tr>
-                  <th className="text-2xl">Experience</th>
+                  <th className="text-xl sm:text-2xl">Experience</th>
                 </tr>
               </thead>
               <tbody>
@@ -83,7 +83,7 @@ export default function Resume() {
             <table className="text-white skill-table ">
               <thead>
                 <tr>
-                  <th className="text-2xl">Skills</th>
+                  <th className="text-xl sm:text-2xl">Skills</th>
                 </tr>
               </thead>
               <tbody>
