@@ -17,7 +17,7 @@ export default function Home() {
          
          "
       >
-        <div className=" w-[80%] sm:w-[50%] h-auto">
+        <div className=" w-[80%] sm:w-[50%] h-auto ">
           <motion.h1
             variants={variant}
             initial="hidden"
@@ -77,7 +77,7 @@ export default function Home() {
                 duration: 0.9,
                 // delay: 0.1 * index,
               }}
-              className="text-white px-4 py-2 border-2 rounded-md scale-75 sm:scale-100"
+              className="text-white text-[12px] sm:text-[18px] mt-4 sm:mt-0 px-4 py-2 border-2 rounded-md scale-75 sm:scale-100"
             >
               Currently Open for Work
             </motion.button>

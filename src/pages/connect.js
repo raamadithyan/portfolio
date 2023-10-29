@@ -11,10 +11,10 @@ export default function Connect() {
     <Page>
       <div
         className="bg-[#5cc9c9] w-full h-[100vh] absolute top-0 left-0 -z-10
-                        flex justify-center items-center
+                        flex justify-center items-center 
     "
       >
-        <div className="w-[80%] sm:w-[50%] h-auto flex justify-end">
+        <div className="w-[80%] sm:w-[50%] h-auto flex justify-center sm:justify-end ">
           {/*Skills*/}
 
           <motion.div
@@ -30,25 +30,29 @@ export default function Connect() {
             <table className="text-white  ">
               <tbody>
                 <tr>
-                  <th className="text-2xl connect-table">
+                  <th className="text-xl sm:text-2xl connect-table">
                     raamadithyan@gmail.com
                   </th>
                 </tr>
                 <tr>
-                  <th className="text-2xl connect-table connect-table-bottom  ">
+                  <th className="text-xl sm:text-2xl connect-table connect-table-bottom  ">
                     9962802830
                   </th>
                 </tr>
                 <tr>
                   <Link href="https://github.com/raamadithyan" legacyBehavior>
-                    <th className="text-2xl connect-table">Github</th>
+                    <th className="text-xl sm:text-2xl connect-table">
+                      Github
+                    </th>
                   </Link>
                 </tr>
                 <tr>
-                  <th className="text-2xl connect-table">Linkedin</th>
+                  <th className="text-xl sm:text-2xl connect-table">
+                    Linkedin
+                  </th>
                 </tr>
                 <tr>
-                  <th className="text-2xl connect-table">Behance</th>
+                  <th className="text-xl sm:text-2xl connect-table">Behance</th>
                 </tr>
               </tbody>
             </table>
