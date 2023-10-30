@@ -1,10 +1,5 @@
-
 function Two() {
-	return (
-		<div>
-			Two
-		</div>
-	)
+  return <div>Two</div>;
 }
 
-export default Two
+export default Two;

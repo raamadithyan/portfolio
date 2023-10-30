@@ -22,7 +22,7 @@ export default function Resume() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{
-              duration: 0.3,
+              duration: 0.6,
               // delay: 0.1 * index,
             }}
           >

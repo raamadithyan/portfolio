@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-function Card({ title, content, index, color, path }) {
+function Card({ title, content, index, color, path, textcolor }) {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const variant = {
@@ -36,10 +36,17 @@ function Card({ title, content, index, color, path }) {
         }}
         className={`card `}
       >
-        <span className="text-3xl">X</span>
+        {/* <span className="text-3xl">X</span> */}
 
-        <h2 className="cursor-pointer ">{title}</h2>
-        <p>{content}</p>
+        <h2
+          style={{
+            color: textcolor,
+          }}
+          className="cursor-pointer text-xl "
+        >
+          {title}
+        </h2>
+        {/* <p>{content}</p>   */}
       </motion.div>
     </Link>
 
