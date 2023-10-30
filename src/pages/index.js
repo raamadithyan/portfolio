@@ -61,11 +61,11 @@ export default function Home() {
             applications and thrive on turning ideas into code.
           </motion.h1>
           <div className="  h-fit relative top-0 sm:relative  sm:mt-8 ">
-            <Lottie
+            {/* <Lottie
               className=" transform -translate-y-20 sm:-translate-y-10  mix-blend-screen scale-100 sm:scale-150 sm:relative"
               style={{ height: 320 }}
               animationData={groovyWalkAnimation}
-            />
+            /> */}
           </div>
           <div className="flex justify-center -translate-y-48 sm:-translate-y-12 ">
             <motion.button
@@ -77,7 +77,7 @@ export default function Home() {
                 duration: 0.9,
                 // delay: 0.1 * index,
               }}
-              className="text-white text-[12px] sm:text-[18px] mt-4 sm:mt-0 px-4 py-2 border-2 rounded-md scale-75 sm:scale-100"
+              className="text-white text-[12px] sm:text-[18px] mt-12 sm:mt-0 px-4 py-2 border-2 rounded-md scale-75 sm:scale-100"
             >
               Currently Open for Work
             </motion.button>
