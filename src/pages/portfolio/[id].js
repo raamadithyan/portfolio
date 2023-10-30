@@ -5,7 +5,7 @@ import CardDetails from "@/components/CardDetails";
 export default function Details() {
   const router = useRouter();
   const pathid = router.query.id;
-  const card = cards.filter((c) => c.color);
+  const textColor = cards.map((c) => c.text);
 
   function cellColor(status) {
     switch (pathid) {
@@ -31,8 +31,8 @@ export default function Details() {
       className={`h-[100vh] text-black`}
     >
       {pathid}
-      <CardDetails  />
-      
+      {/* {console.log(textColor)} */}
+      <CardDetails card={textColor} />
     </div>
   );
 }
