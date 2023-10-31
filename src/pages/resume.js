@@ -9,7 +9,7 @@ export default function Resume() {
   return (
     <Page>
       <div
-        className="bg-[#ee0e94] w-full h-[100vh] absolute top-0 left-0 -z-10
+        className="bg-[#ee0e94] w-full h-[100vh] absolute top-0 left-0 z-10
       flex justify-center items-center
     "
       >
@@ -97,10 +97,16 @@ export default function Resume() {
                   <td>React JS</td>
                 </tr>
                 <tr>
+                  <td>Redux</td>
+                </tr>
+                <tr>
                   <td>Next JS</td>
                 </tr>
                 <tr>
                   <td>Node JS</td>
+                </tr>
+                <tr>
+                  <td>MongoDB</td>
                 </tr>
                 <tr>
                   <td>React Testing Library</td>

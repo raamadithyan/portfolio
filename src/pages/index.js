@@ -61,11 +61,11 @@ export default function Home() {
             applications and thrive on turning ideas into code.
           </motion.h1>
           <div className="  h-fit relative top-0 sm:relative  sm:mt-8 ">
-            {/* <Lottie
+            <Lottie
               className=" transform -translate-y-20 sm:-translate-y-10  mix-blend-screen scale-100 sm:scale-150 sm:relative"
               style={{ height: 320 }}
               animationData={groovyWalkAnimation}
-            /> */}
+            />
           </div>
           <div className="flex justify-center -translate-y-48 sm:-translate-y-12 ">
             <motion.button

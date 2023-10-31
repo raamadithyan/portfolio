@@ -1,5 +1,10 @@
 import { useRouter } from "next/router";
-import Header from "./header";
+import { Rammetto_One } from "next/font/google";
+
+const rammetto = Rammetto_One({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 function CardDetails({ card }) {
   const router = useRouter();
@@ -7,10 +12,10 @@ function CardDetails({ card }) {
 
   console.log(card);
   return (
-    <div className="flex h-fit justify-start border-2 w-[55%] text-white">
+    <div className="flex h-fit justify-start  pt-[48px] w-[55%] text-white gap-12">
       {/* Coloum left */}
 
-      <div className="border-2 w-full">
+      <div className=" w-full flex flex-col gap-8">
         {/* Back Button */}
         <div>
           <span
@@ -38,17 +43,37 @@ function CardDetails({ card }) {
         {/* Heading */}
 
         <div>
-          <header> Heading</header>
+          <div className={rammetto.className}>
+            <header
+              className="text-[32px]"
+              style={{ color: pathid === "kanban-board" ? "white" : "black" }}
+            >
+              {pathid === "kanban-board" &&
+                "The KanbanBoard App is a digital project management tool"}
+              {pathid === "article-condense" &&
+                "The Article Condenser App is a cutting-edge text summarization tool"}
+            </header>
+          </div>
         </div>
 
         {/* Technologies used */}
 
-        <div>Technologies used</div>
+        <div style={{ color: pathid === "kanban-board" ? "white" : "black" }}>
+          Technologies used
+        </div>
       </div>
 
       {/* column right */}
-      <div className="border-2 w-full">
-        <p> Proj info</p>
+      <div className=" w-full">
+        <p
+          className="text-[14px] mt-[60px] "
+          style={{ color: pathid === "kanban-board" ? "white" : "black" }}
+        >
+          {pathid === "kanban-board" &&
+            "Designed to help teams and individuals organize tasks, track progress, and improve workflow efficiency using the Kanban methodology. This app provides a user-friendly interface that enables seamless task management, collaboration, and visualization of work processes."}
+          {pathid === "article-condense" &&
+            "Users extract key information from lengthy articles, research papers, and documents. It employs advanced natural language processing techniques to generate concise and informative summaries, saving users valuable time and ensuring they grasp the essence of the content."}
+        </p>
       </div>
     </div>
   );
