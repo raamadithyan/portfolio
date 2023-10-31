@@ -28,9 +28,9 @@ export default function Details() {
       style={{
         backgroundColor: cellColor(pathid),
       }}
-      className={`h-[100vh] text-black`}
+      className="h-[100vh] flex justify-center"
     >
-      {pathid}
+      {/* {pathid} */}
       {/* {console.log(textColor)} */}
       <CardDetails card={textColor} />
     </div>
