@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Rammetto_One } from "next/font/google";
+import { Gemunu_Libre } from "next/font/google";
 
 import { createPortal } from "react-dom";
 
-const rammetto = Rammetto_One({
+const rammetto = Gemunu_Libre({
   weight: "400",
   subsets: ["latin"],
 });
@@ -18,7 +18,7 @@ const Header = () => {
         className="text-2xl py-0 block z-50
     sm:flex sm:gap-12 sm:py-4  sm:text-xl"
       >
-        <div className={rammetto.className}>
+        <div className={`${rammetto.className} text-[32px]`}>
           <Link href="/"> Raam Adithyan</Link>
         </div>
       </div>
@@ -30,14 +30,12 @@ const Header = () => {
       >
         <div className="header-item text-xl">
           <Link className="text-[1rem] sm:text-[1.2rem]" href="/portfolio">
-            {" "}
             Portfolio
           </Link>
         </div>
 
         <div className="header-item text-xl">
           <Link className="text-[1rem] sm:text-[1.2rem]" href="/resume">
-            {" "}
             Resume
           </Link>
         </div>

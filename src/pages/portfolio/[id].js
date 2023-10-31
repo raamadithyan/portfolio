@@ -7,6 +7,13 @@ export default function Details() {
   const pathid = router.query.id;
   const textColor = cards.map((c) => c.text);
 
+  const cardArr = [
+    {
+      projectHeading:"The KanbanBoard App is a digital project management tool",
+      projectDescription:"designed to help teams and individuals organize tasks, track progress, and improve workflow efficiency using the Kanban methodology. This app provides a user-friendly interface that enables seamless task management, collaboration, and visualization of work processes."
+    }
+  ]
+
   function cellColor(status) {
     switch (pathid) {
       case "kanban-board":

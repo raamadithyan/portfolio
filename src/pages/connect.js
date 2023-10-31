@@ -10,7 +10,7 @@ export default function Connect() {
   return (
     <Page>
       <div
-        className="bg-[#5cc9c9] w-full h-[100vh] absolute top-0 left-0 -z-10
+        className="bg-[#5cc9c9] w-full h-[100vh] absolute top-0 left-0 z-10
                         flex justify-center items-center 
     "
       >
@@ -27,35 +27,35 @@ export default function Connect() {
               // delay: 0.1 * index,
             }}
           >
-            <table className="text-white  ">
-              <tbody>
-                <tr>
-                  <th className="text-xl sm:text-2xl connect-table">
-                    raamadithyan@gmail.com
-                  </th>
-                </tr>
-                <tr>
-                  <th className="text-xl sm:text-2xl connect-table connect-table-bottom  ">
-                    9962802830
-                  </th>
-                </tr>
-                <tr>
-                  <Link href="https://github.com/raamadithyan" legacyBehavior>
-                    <th className="text-xl sm:text-2xl connect-table">
-                      Github
-                    </th>
-                  </Link>
-                </tr>
-                <tr>
-                  <th className="text-xl sm:text-2xl connect-table">
-                    Linkedin
-                  </th>
-                </tr>
-                <tr>
-                  <th className="text-xl sm:text-2xl connect-table">Behance</th>
-                </tr>
-              </tbody>
-            </table>
+            <section className="text-white flex flex-col  ">
+              <p className="text-xl sm:text-2xl connect-table">
+                raamadithyan@gmail.com
+              </p>
+              <p className="text-xl sm:text-2xl connect-table connect-table-bottom  ">
+                9962802830
+              </p>
+              <a
+                className="text-xl sm:text-2xl connect-table"
+                href="https://github.com/raamadithyan"
+                target="_blank"
+              >
+                Github
+              </a>
+              <a
+                className="text-xl sm:text-2xl connect-table"
+                href="https://www.linkedin.com/in/raamadithyan/"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+              <a
+                className="text-xl sm:text-2xl connect-table"
+                href="https://www.behance.net/raamadithyan"
+                target="_blank"
+              >
+                Behance
+              </a>
+            </section>
           </motion.div>
         </div>
       </div>
