@@ -1,6 +1,14 @@
 import { useRouter } from "next/router";
 import { Rammetto_One } from "next/font/google";
-
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiVite,
+  SiFramer,
+  SiRedux
+} from "react-icons/si";
 const rammetto = Rammetto_One({
   weight: "400",
   subsets: ["latin"],
@@ -59,7 +67,37 @@ function CardDetails({ card }) {
         {/* Technologies used */}
 
         <div style={{ color: pathid === "kanban-board" ? "white" : "black" }}>
-          Technologies used
+          <p>Technologies used</p>
+          <div className="flex gap-3 mt-4 ">
+
+            {pathid==="kanban-board"
+            &&
+            <>
+            <SiReact title="React" size={32} />
+            <SiTypescript title="Typescript" size={32} />
+            <SiTailwindcss title="Tailwind CSS" size={32} />
+            <SiVite title="Vite" size={32} />
+            </>
+            }
+
+            {pathid==="article-condense"
+            &&
+            <>
+            <SiReact title="React" size={32} />
+            <SiTailwindcss title="Tailwind CSS" size={32} />
+            <SiRedux title="Redux" size={32} />
+            <SiVite title="Vite" size={32} />
+            </>
+            }
+{/* 
+            <SiReact title="React" size={32} />
+            <SiTypescript title="Typescript" size={32} />
+            <SiTailwindcss title="Tailwind CSS" size={32} />
+            <SiVite title="Vite" size={32} />
+            <SiFramer title="Framer Motion" size={32} />
+            <SiNextdotjs title="Nextjs" size={32} /> */}
+
+          </div>
         </div>
       </div>
 
