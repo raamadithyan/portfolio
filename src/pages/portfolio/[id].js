@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 // import { motion } from "framer-motion";
 import { cards } from "./index";
 import CardDetails from "@/components/CardDetails";
+
+
 export default function Details() {
   const router = useRouter();
   const pathid = router.query.id;
