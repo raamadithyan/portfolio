@@ -37,7 +37,7 @@ export default function Details() {
       style={{
         backgroundColor: cellColor(pathid),
       }}
-      className="h-[100vh] flex justify-center"
+      className="h-[100vh] w-[100vw] flex justify-center"
     >
       {/* {pathid} */}
       {/* {console.log(textColor)} */}
