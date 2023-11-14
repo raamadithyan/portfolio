@@ -35,6 +35,12 @@ export default function Resume() {
               <tbody>
                 <tr>
                   <td>
+                    2022 — 2023 <br />
+                    <span>Sun Infotek </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
                     2021 — 2022 <br />
                     <span>Diamondpick</span>
                   </td>
@@ -52,15 +58,10 @@ export default function Resume() {
                     <span>Sulekha </span>
                   </td>
                 </tr>
+
                 <tr>
                   <td>
-                    2014 — 2015 <br />
-                    <span>Sun Infotek </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    2012 — 2014 <br />
+                    2012 — 2015 <br />
                     <span>Sony Pictures Imageworks </span>
                   </td>
                 </tr>
