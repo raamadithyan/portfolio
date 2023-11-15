@@ -10,7 +10,7 @@ export default function Connect() {
   return (
     <Page>
       <div
-        className="bg-[#5cc9c9] w-full h-[100vh] absolute top-0 left-0 z-10
+        className="bg-[#8100ba] w-full h-[100vh] absolute top-0 left-0 z-10
                         flex justify-center items-center 
     "
       >
@@ -35,21 +35,21 @@ export default function Connect() {
                 9962802830
               </p>
               <a
-                className="text-xl sm:text-2xl connect-table"
+                className="text-xl sm:text-2xl connect-table nav"
                 href="https://github.com/raamadithyan"
                 target="_blank"
               >
                 Github
               </a>
               <a
-                className="text-xl sm:text-2xl connect-table"
+                className="text-xl sm:text-2xl connect-table nav"
                 href="https://www.linkedin.com/in/raamadithyan/"
                 target="_blank"
               >
                 Linkedin
               </a>
               <a
-                className="text-xl sm:text-2xl connect-table"
+                className="text-xl sm:text-2xl connect-table nav"
                 href="https://www.behance.net/raamadithyan"
                 target="_blank"
               >
