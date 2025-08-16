@@ -1,8 +1,11 @@
 import Page from "@/components/Page";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 import groovyWalkAnimation from "public/block.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function Home() {
   const variant = {
     hidden: { opacity: 0, y: 20 },
@@ -56,8 +59,8 @@ export default function Home() {
         text-center
         "
           >
-            Feature oriented Front End Developer specializing in JavaScript and
-            React. Passionate about creating dynamic interactive web
+            Feature oriented Senior Software Developer specializing in <b>NodeJS, Typescript and
+            React. </b>Passionate about creating dynamic interactive web
             applications and thrive on turning ideas into code.
           </motion.h1>
           <div className="  h-fit relative top-0 sm:relative  sm:mt-8 ">

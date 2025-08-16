@@ -32,7 +32,7 @@ export default function Connect() {
                 raamadithyan@gmail.com
               </p>
               <p className="text-xl sm:text-2xl connect-table connect-table-bottom  ">
-                9962802830
+                9962******
               </p>
               <a
                 className="text-xl sm:text-2xl connect-table nav"

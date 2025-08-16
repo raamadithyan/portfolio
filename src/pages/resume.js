@@ -9,7 +9,7 @@ export default function Resume() {
   return (
     <Page>
       <div
-        className="bg-[#ee0e94] w-full h-[100vh] absolute top-0 left-0 z-10
+        className="bg-[#6868ab] w-full h-[100vh] absolute top-0 left-0 z-10
       flex justify-center items-center
     "
       >
@@ -33,10 +33,16 @@ export default function Resume() {
                 </tr>
               </thead>
               <tbody>
+                 <tr>
+                  <td>
+                    2023 - Present <br />
+                    <span>Synechron</span>
+                  </td>
+                </tr>
                 <tr>
                   <td>
                     2022 — 2023 <br />
-                    <span>Sun Infotek </span>
+                    <span>Sun Infotek</span>
                   </td>
                 </tr>
                 <tr>
@@ -88,9 +94,7 @@ export default function Resume() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Javascript</td>
-                </tr>
+              
                 <tr>
                   <td>Typescript</td>
                 </tr>
@@ -106,6 +110,9 @@ export default function Resume() {
                 <tr>
                   <td>Node JS</td>
                 </tr>
+                 <tr>
+                  <td>Nest JS</td>
+                </tr>
                 <tr>
                   <td>MongoDB</td>
                 </tr>
@@ -114,6 +121,9 @@ export default function Resume() {
                 </tr>
                 <tr>
                   <td>Jest</td>
+                </tr>
+                <tr>
+                  <td>Jenkins</td>
                 </tr>
                 <tr>
                   <td>Git</td>
